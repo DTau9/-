@@ -38,7 +38,14 @@ input {
 	width           : 29em;
 }
 
-#theme:checked~.task .logo.logo_dark-theme {
+.config {
+	display        : flex;
+	font-size      : 1.5em;
+	justify-content: space-between;
+	width          : 40rem;
+}
+
+#theme:checked~.task .logo {
 	--base-color      : #AA6C4D;
 	--additional-color: #00AD9E;
 	--bg-color        : #303030;
@@ -50,7 +57,6 @@ input {
 
 .change-theme {
 	cursor       : pointer;
-	display      : inline-block;
 	margin-bottom: 1em;
 }
 
@@ -61,6 +67,33 @@ input {
 	outline       : 2px solid;
 	outline-offset: 0.2em;
 	width         : 1rem;
+}
+
+#logo_m1:checked~.task .logo {
+	font-size: 1rem;
+}
+
+#logo_m1:checked~.task label[for="logo_m1"],
+#logo_m2:checked~.task label[for="logo_m2"],
+#logo_m3:checked~.task label[for="logo_m3"] {
+	background-color: #440000;
+	color           : #fff;
+}
+
+#logo_m2:checked~.task .logo {
+	font-size: 2rem;
+}
+
+#logo_m3:checked~.task .logo {
+	font-size: 2.5rem;
+}
+
+.change-scale label {
+	cursor           : pointer;
+	margin           : 0 0.5em;
+	outline          : 1px solid;
+	/* outline-offset: 0.1em; */
+	padding          : 0.2em;
 }
 
 .logo__img {
