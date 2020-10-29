@@ -1,0 +1,15 @@
+@font-face {
+	font-family: "Sky Sans W01 Book Small Caps";
+	src        : url("8e6308acd5421840f8bc2f3a120029d5.eot");
+	/* IE9*/
+	src        : url("8e6308acd5421840f8bc2f3a120029d5.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */
+		url("8e6308acd5421840f8bc2f3a120029d5.woff2") format("woff2"),
+		/* chrome、firefox */
+		url("8e6308acd5421840f8bc2f3a120029d5.woff") format("woff"),
+		/* chrome、firefox */
+		url("8e6308acd5421840f8bc2f3a120029d5.ttf") format("truetype"),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		url("8e6308acd5421840f8bc2f3a120029d5.svg#Sky Sans W01 Book Small Caps") format("svg");
+	/* iOS 4.1- */
+}
