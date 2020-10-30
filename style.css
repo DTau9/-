@@ -19,12 +19,13 @@
 }
 
 html {
-	font-size: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size  : 10px;
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	margin     : 1rem;
+	margin   : 1rem auto;
+	max-width: 72rem;
 }
 
 input {
@@ -41,8 +42,13 @@ h2 {
 }
 
 .res-description {
-	font-size : 1.7rem;
-	margin-top: 1.6em;
+	font-size: 1.7rem;
+	margin   : 2.3em 0;
+}
+
+.prototype,
+.logo {
+	margin-left: 10%;
 }
 
 .logo {
@@ -57,7 +63,7 @@ h2 {
 	display        : flex;
 	font-size      : 1.5em;
 	justify-content: space-between;
-	margin-bottom  : 1.5em;
+	margin-top     : 2.1em;
 	width          : 40rem;
 }
 
@@ -111,7 +117,7 @@ h2 {
 	padding          : 0.2em;
 }
 
-.logo__img {
+.emblem {
 	border       : 1.65em solid var(--base-color);
 	border-radius: 50%;
 	height       : 4.9em;
@@ -119,26 +125,26 @@ h2 {
 	width        : 4.9em;
 }
 
-.logo__img::after,
-.logo__img::before {
-	border-radius: 50%;
+.emblem::after,
+.emblem::before {
+	border-radius: 51%;
 	content      : "";
 	display      : block;
 	height       : 0;
 	left         : 50%;
 	position     : absolute;
 	top          : 50%;
-	transform    : translateY(-50%);
+	transform    : translateY(-50%) rotate(-1deg);
 	width        : 0;
 }
 
-.logo__img::before {
-	border-top   : 2.8em solid transparent;
-	border-bottom: 2.8em solid transparent;
+.emblem::before {
+	border-top   : 2.9em solid transparent;
+	border-bottom: 2.9em solid transparent;
 	border-right : 4.3em solid var(--bg-color);
 }
 
-.logo__img::after {
+.emblem::after {
 	border-top   : 1.7em solid transparent;
 	border-bottom: 1.7em solid transparent;
 	border-right : 2.54em solid var(--additional-color);
@@ -154,18 +160,20 @@ h2 {
 .logo__additional-name {
 	font          : 2.34em "ITC Avant Garde Gothic", sans-serif;
 	letter-spacing: 0.11em;
+	line-height   : 0.8em;
 	position      : absolute;
 }
 
 .logo__base-name {
-	color: var(--base-color);
-	left : 0.4em;
-	top  : 0.49em;
+	color       : var(--base-color);
+	left        : 0.4em;
+	word-spacing: 0.06em;
+	top         : 0.77em;
 }
 
 .logo__additional-name {
 	color : var(--additional-color);
-	bottom: 0.57em;
+	bottom: 0.77em;
 	left  : 0.4em;
 }
 
